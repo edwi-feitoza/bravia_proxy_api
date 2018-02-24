@@ -6,9 +6,9 @@ exports.powerStatus = function(req, res){
     bravia.system.invoke('getPowerStatus')
         .then(function(tvStatus){
             if('active' === tvStatus.status){
-                res.send('Está ligada essa merda com uma negra gostosa pelada e presa na tela!')
+                res.send('YES')
             } else {
-                res.send('Está desligada essa merda!')
+                res.send('NO')
             }
             res.json(tvStatus);
         })
