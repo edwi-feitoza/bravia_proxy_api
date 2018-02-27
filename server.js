@@ -10,4 +10,5 @@ const routes = require('./api/routes/braviaRoutes')(app)
 app.listen(port)
 
 // seria legal trabalhar com nodeenvs pra definir exibicao de logs
-console.log('Servidor iniciado com sucesso na porta: ' + port)
+if (port === 3000)
+    console.log('Servidor iniciado com sucesso na porta: ' + port)
