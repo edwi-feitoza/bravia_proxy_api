@@ -4,18 +4,17 @@
   "description": "Proxy em NodeJS para acessar a API da TV Sony Bravia",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
   "author": "Edwi Feitoza",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.15.1"
+    "nodemon": "1.15.1"
   },
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "bravia": "^1.2.0",
-    "express": "^4.16.2",
-    "mongoose": "^5.0.6"
+    "body-parser": "1.18.2",
+    "bravia": "1.2.0",
+    "express": "4.16.2",
+    "mongoose": "5.0.6"
   }
 }
