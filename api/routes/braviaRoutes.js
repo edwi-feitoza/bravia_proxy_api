@@ -1,10 +1,11 @@
 'use-strict';
-module.exports = function(app){
-    var braviaCommands = require('../controllers/braviaController');
-    
-    app.route('/power-status')
-        .get(braviaCommands.powerStatus);
 
+module.exports = function (app) {
+    const braviaCommands = require('../controllers/braviaController')
+
+    app.route('/power-status')
+        .get(braviaCommands.powerStatus)
+  
     app.route('/turn-on')
         .put(braviaCommands.turnOnTv);
         

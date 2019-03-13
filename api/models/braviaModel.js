@@ -1,9 +1,10 @@
 'use-strict';
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
 
-var BraviaSchema = new Schema({
-    ligada : {
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+
+const BraviaSchema = new Schema({
+    ligada: {
         type: Boolean,
         required: 'Verifique se a informação de televisão ligada foi fornecida corretamente'
     },
@@ -16,5 +17,7 @@ var BraviaSchema = new Schema({
         required: 'Verifique se a funcao que foi invocada na API foi fornecida corretamente'
     }
 
-});
-module.exports = mongoose.model('Bravia', BraviaSchema);
+})
+
+// se não me engano a convenção sugere lowercase para nome de collections
+module.exports = mongoose.model('Bravia', BraviaSchema)
