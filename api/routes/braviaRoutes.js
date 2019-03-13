@@ -5,177 +5,177 @@ module.exports = function(app){
     app.route('/power-status')
         .get(braviaCommands.powerStatus);
 
-    app.route('/turn-on-tv')
-        .post(braviaCommands.turnOnTv);
+    app.route('/turn-on')
+        .put(braviaCommands.turnOnTv);
         
-    app.route('/turn-off-tv')
-        .post(braviaCommands.turnOffTv);
+    app.route('/turn-off')
+        .put(braviaCommands.turnOffTv);
     
-    app.route('/antenna-in')
-        .post(braviaCommands.antennaIn);
+    app.route('/antenna')
+        .put(braviaCommands.antennaIn);
         
     app.route('/audio-mode')
-        .post(braviaCommands.audioMode);
+        .put(braviaCommands.audioMode);
     
     app.route('/blue-button')
-        .post(braviaCommands.blueButton);
+        .put(braviaCommands.blueButton);
         
-    app.route('/decrease-channel')
-        .post(braviaCommands.decreaseChannel);
+    app.route('/channel-down')
+        .put(braviaCommands.decreaseChannel);
     
-    app.route('/increase-channel')
-        .post(braviaCommands.increaseChannel);
+    app.route('/channel-up')
+        .put(braviaCommands.increaseChannel);
         
     app.route('/ok-button')
-        .post(braviaCommands.okButton);
+        .put(braviaCommands.okButton);
     
     app.route('/display')
-        .post(braviaCommands.display);
+        .put(braviaCommands.display);
         
-    app.route('/directional-down')
-        .post(braviaCommands.directionalDown);
+    app.route('/down')
+        .put(braviaCommands.directionalDown);
     
     app.route('/epg')
-        .post(braviaCommands.epg);
+        .put(braviaCommands.epg);
 
-    app.route('/exit-button')
-        .post(braviaCommands.exitButton);
+    app.route('/exit')
+        .put(braviaCommands.exitButton);
         
-    app.route('/foward-button')
-        .post(braviaCommands.forwardButton);
+    app.route('/foward')
+        .put(braviaCommands.forwardButton);
     
-    app.route('/green-button')
-        .post(braviaCommands.greenButton);
+    app.route('/green')
+        .put(braviaCommands.greenButton);
         
     app.route('/home')
-        .post(braviaCommands.home);
+        .put(braviaCommands.home);
     
     app.route('/input')
-        .post(braviaCommands.input);
+        .put(braviaCommands.input);
         
-    app.route('/directional-left')
-        .post(braviaCommands.directionalLeft);
+    app.route('/left')
+        .put(braviaCommands.directionalLeft);
     
     app.route('/mute')
-        .post(braviaCommands.mute);
+        .put(braviaCommands.mute);
         
-    app.route('/next-button')
-        .post(braviaCommands.nextButton);
+    app.route('/next')
+        .put(braviaCommands.nextButton);
     
-    app.route('/number-zero')
-        .post(braviaCommands.numberZero);
+    app.route('/zero')
+        .put(braviaCommands.numberZero);
         
-    app.route('/number-one')
-        .post(braviaCommands.numberOne);
+    app.route('/one')
+        .put(braviaCommands.numberOne);
     
-    app.route('/number-two')
-        .post(braviaCommands.numberTwo);
+    app.route('/two')
+        .put(braviaCommands.numberTwo);
 
-    app.route('/number-three')
-        .post(braviaCommands.numberThree);
+    app.route('/three')
+        .put(braviaCommands.numberThree);
         
-    app.route('/number-four')
-        .post(braviaCommands.numberFour);
+    app.route('/four')
+        .put(braviaCommands.numberFour);
     
-    app.route('/number-five')
-        .post(braviaCommands.numberFive);
+    app.route('/five')
+        .put(braviaCommands.numberFive);
         
-    app.route('/number-six')
-        .post(braviaCommands.numberSix);
+    app.route('/six')
+        .put(braviaCommands.numberSix);
     
-    app.route('/number-seven')
-        .post(braviaCommands.numberSeven);
+    app.route('/seven')
+        .put(braviaCommands.numberSeven);
         
-    app.route('/number-eight')
-        .post(braviaCommands.numberEight);
+    app.route('/eight')
+        .put(braviaCommands.numberEight);
     
-    app.route('/number-nine')
-        .post(braviaCommands.numberNine);
+    app.route('/nine')
+        .put(braviaCommands.numberNine);
         
     app.route('/options')
-        .post(braviaCommands.options);
+        .put(braviaCommands.options);
     
     app.route('/pap')
-        .post(braviaCommands.pap);
+        .put(braviaCommands.pap);
         
     app.route('/pause')
-        .post(braviaCommands.pause);
+        .put(braviaCommands.pause);
     
     app.route('/play')
-        .post(braviaCommands.play);
+        .put(braviaCommands.play);
 
-    app.route('/previus-button')
-        .post(braviaCommands.previousButton);
+    app.route('/previus')
+        .put(braviaCommands.previousButton);
         
-    app.route('/red-button')
-        .post(braviaCommands.redButton);
+    app.route('/red')
+        .put(braviaCommands.redButton);
     
     app.route('/return')
-        .post(braviaCommands.return);
+        .put(braviaCommands.return);
         
-    app.route('/rewind-button')
-        .post(braviaCommands.rewindButton);
+    app.route('/rewind')
+        .put(braviaCommands.rewindButton);
     
-    app.route('/directional-right')
-        .post(braviaCommands.directionalRight);
+    app.route('/right')
+        .put(braviaCommands.directionalRight);
         
     app.route('/stop')
-        .post(braviaCommands.stop);
+        .put(braviaCommands.stop);
     
     app.route('/subtittle')
-        .post(braviaCommands.subtittle);
+        .put(braviaCommands.subtittle);
         
     app.route('/sync-menu')
-        .post(braviaCommands.syncMenu);
+        .put(braviaCommands.syncMenu);
     
-    app.route('/directional-up')
-        .post(braviaCommands.directionalUp);
+    app.route('/up')
+        .put(braviaCommands.directionalUp);
         
-    app.route('/decrease-volume')
-        .post(braviaCommands.decreaseVolume);
+    app.route('/volume-down')
+        .put(braviaCommands.decreaseVolume);
     
-    app.route('/increase-volume')
-        .post(braviaCommands.increaseVolume);
+    app.route('/volume-up')
+        .put(braviaCommands.increaseVolume);
 
     app.route('/wide')
-        .post(braviaCommands.wide);
+        .put(braviaCommands.wide);
         
-    app.route('/yellow-button')
-        .post(braviaCommands.yellowButton);
+    app.route('/yellow')
+        .put(braviaCommands.yellowButton);
     
-    app.route('/hdmi-1')
-        .post(braviaCommands.hdmi1);
+    app.route('/hdmi1')
+        .put(braviaCommands.hdmi1);
         
-    app.route('/hdmi-2')
-        .post(braviaCommands.hdmi2);
+    app.route('/hdmi2')
+        .put(braviaCommands.hdmi2);
     
-    app.route('/hdmi-3')
-        .post(braviaCommands.hdmi3);
+    app.route('/hdmi3')
+        .put(braviaCommands.hdmi3);
         
-    app.route('/hdmi-4')
-        .post(braviaCommands.hdmi4);
+    app.route('/hdmi4')
+        .put(braviaCommands.hdmi4);
     
     app.route('/social')
-        .post(braviaCommands.social);
+        .put(braviaCommands.social);
         
     app.route('/football')
-        .post(braviaCommands.football);
+        .put(braviaCommands.football);
     
     app.route('/dux')
-        .post(braviaCommands.dux);
+        .put(braviaCommands.dux);
         
     app.route('/antenna-cable')
-        .post(braviaCommands.antennaCable);
+        .put(braviaCommands.antennaCable);
 
     app.route('/keypad')
-        .post(braviaCommands.keypad);
+        .put(braviaCommands.keypad);
         
     app.route('/track-id')
-        .post(braviaCommands.trackId);
+        .put(braviaCommands.trackId);
     
     app.route('/i-manual')
-        .post(braviaCommands.iManual);
+        .put(braviaCommands.iManual);
         
     app.route('/netflix')
-        .post(braviaCommands.netflix);
+        .put(braviaCommands.netflix);
 }
